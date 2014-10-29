@@ -5,21 +5,52 @@
 <title>Title Here</title> 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" /> 
-<link rel="stylesheet" type="text/css" href="style.css">  
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" type="text/css" href="normalize.css"> 
 
 
 </head>    
 <body> 
 
-<h1>UIC</h1>  
+<div class="logo">
+<p>
+<img src="uic.gif" alt height="120" width="500">
+</p>
+</div>
+<div class="bar">
+<p> s</p>
+</div>
+
+  
 
 <fieldset style="margin-right: 50%;">
 <form>
 <h2>Sign In:<h2>
-<label>Email</label>
-<input type="email" name="email" required>
-<label>Password</label>
+<p>
+<label for="email">Email</label>
+
+</p>
+<p>
+<input type="email" placeholder="Enter your Email" name="email" required autofocus>
+<input type="radio" name"radio">Not a member?
+</p>
+
+<p>Fist Name: <input type="text" name="firstname"></p>
+<p>Last Name: <input type="text" name="lastname"></p>
+<p>ID Number: <input type="text" name="idnumber" size="9" maxlength="9"></P>
+<p>SS: <input type="text" name="ssn4" size="3" maxlength="3">
+<span>-</span>
+<input type="text" name="ssn4" size="2" maxlength="2">
+<span>-</span>
+<input type="text" name="ssn4" size="3" maxlength="3">
+</p>
+<p><input type="reset"></p>
+<p>
+<label for="email">Password</label>
+</p>
+<p>
 <input type="password" name="password" required>
+</p>
 <input type="submit">
 </form>
 </fieldset>
