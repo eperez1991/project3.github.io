@@ -10,3 +10,11 @@ background-color:	#001A33;
 background-color:red;
 }
 
+.hidden{
+display:none;
+
+}
+
+.invisible{
+visibility:hidden
+}

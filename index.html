@@ -8,6 +8,26 @@
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <link rel="stylesheet" type="text/css" href="normalize.css"> 
 
+  <script type="text/javascript">
+  
+  function showHide(){
+  var checkbox = document.getElementById("checkbox");
+  var hiddeninputs = document.getElementsByClassName("hidden");
+  
+  for(var i = 0; 1 != hiddeninputs.length; i++){
+    if(checkbox.checked){
+  hiddeninputs[i].style.display = "block";
+  }
+  else{
+  hiddeninputs[i].style.display ="none";
+  }
+  }
+  }
+  
+ 
+  
+  
+  </script>
 
 </head>    
 <body> 
@@ -17,8 +37,8 @@
 <img src="uic.gif" alt height="120" width="500">
 </p>
 </div>
-<div class="bar">
-<p> s</p>
+<div class="invisible">
+<p> invisible</p>
 </div>
 
   
@@ -31,23 +51,44 @@
 
 </p>
 <p>
+
 <input type="email" placeholder="Enter your Email" name="email" required autofocus>
-<input type="radio" name"radio">Not a member?
+
+
 </p>
-<ul class="subinfo" style="display; block;">
-<li><p>Fist Name: <input type="text" name="firstname"></p></li>
-<li><p>Last Name: <input type="text" name="lastname"></p></li>
-<li><p>ID Number: <input type="text" name="idnumber" size="9" maxlength="9"></P></li>
 
-
-<li><p>SS: <input type="text" name="ssn4" size="3" maxlength="3">
-<span>-</span>
-<input type="text" name="ssn4" size="2" maxlength="2">
-<span>-</span>
-<input type="text" name="ssn4" size="3" maxlength="3">
-</p></li>
-<p><input type="reset"></p>
+<input type="checkbox" name="check" id="checkbox" onclick="showHide()">
+<label for="checkbox">Not a member?</label>
 <p>
+<input type="text" name="firstname" id="firstname" class="hidden">
+<label for="firstname" class="hidden">First Name </label>
+</p>
+<p>
+<input type="text" name="lastname" id="lastname" class="hidden">
+<label for="lastname" class="hidden">Last Name</label>
+</p>
+<p>
+<input type="text" name="idnumber" id="idnum" size="9" maxlength="9" class="hidden">
+<label for="idnum" class="hidden">ID Number</label>
+</p>
+
+
+<p>
+ <input type="text" name="ssn4" id="ss" size="3" maxlength="3" class="hidden">
+<span class="hidden">-</span>
+<input type="text" name="ssn4" id="ss" size="2" maxlength="2" class="hidden">
+<span class="hidden">-</span>
+<input type="text" name="ssn4" id="ss" size="3" maxlength="3" class="hidden"> 
+<label for="ss" class="hidden">Social Security</label>
+</p>
+
+
+<p><input type="reset" class="hidden"></p>
+<p>
+
+
+
+
 <label for="email">Password</label>
 </p>
 <p>
