@@ -40,6 +40,8 @@ padding-left: 5em;
 color:white;
 }
 
+
+
 .info {
 position:absolute;
 padding-left:15em;
@@ -53,8 +55,9 @@ padding-right:1em;
 fieldset{
 width:10em;
 
-
 }
+
+
 
 .hidden{
 display:none;
@@ -65,13 +68,20 @@ display:none;
 @media screen and (max-width: 25em) {
   
   nav{
-   background-color:black;
+   background-color:	#333333;
+ 
      
+  }
+  
+  .logo img{
+  width:15em;
+  padding-left:1em;
+  
   }
   
   a{
   display:block;
-  color:grey;
+  color:	#CCCCCC;
   font-size:2em;
   padding-left:3em;
   }
@@ -81,6 +91,14 @@ padding-left:1em;
 padding-right:1em;
   }
   
+  fieldset{
+  background-color:red;
+  
+  
+  }
+  
+  fieldset input{
+  padding-left:3.5em;
   
 }
 
