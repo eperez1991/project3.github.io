@@ -41,9 +41,7 @@ color:white;
 }
 
 .info {
-position:fixed;
-
-float:left;
+position:absolute;
 padding-left:15em;
 padding-right:1em;
 
@@ -65,10 +63,10 @@ display:none;
 
 
 @media screen and (max-width: 25em) {
+  
   nav{
    background-color:black;
-    
-    
+     
   }
   
   a{
@@ -76,10 +74,17 @@ display:none;
   color:grey;
   font-size:2em;
   padding-left:3em;
-  
+  }
+  .info{
+   position:relative;
+padding-left:1em;
+padding-right:1em;
   }
   
+  
 }
+
+
 
 @media screen and (min-width: 50em) {
    nav{
