@@ -1,10 +1,70 @@
+html{
+ -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 
+
+}
+
+
+
+
+body{
+ padding-top: 0em;
+ font-family:marriweather;
+}
 
 
 .logo{
 background-color:	#001A33;
+padding-bottom: 0em;
+}
+.nav {
+padding-top: 0em;
 
 }
+nav{
+background-color:red;
+display: inline;
+padding-top:.5em;
+padding-bottom:.5em;
+
+}
+a{
+display: inline;
+padding-left: 5em;
+color:white;
+
+}
+
+
+
+
+
+
+fieldset{
+width:10em;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+fieldset{
+font-family:
+
+}
+
+
 
 .bar{
 background-color:red;
@@ -18,3 +78,9 @@ display:none;
 .invisible{
 visibility:hidden
 }
+
+
+@media screen and (max-width: 480px) {
+
+}
+
