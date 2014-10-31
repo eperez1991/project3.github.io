@@ -3,12 +3,7 @@ html{
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
-
 }
-
-
-
 
 body{
  padding-top: 0em;
@@ -24,6 +19,8 @@ padding-bottom: 0em;
 padding-top: 0em;
 
 }
+
+
 nav{
 background-color:red;
 display: inline;
@@ -31,43 +28,29 @@ padding-top:.5em;
 padding-bottom:.5em;
 
 }
+
 a{
 display: inline;
 padding-left: 5em;
 color:white;
-
 }
 
+.info {
+position:fixed;
+
+float:left;
+padding-left:15em;
+padding-right:1em;
 
 
+}
 
 
 
 fieldset{
 width:10em;
+float:left;
 
-
-
-}
-
-
-
-
-
-
-
-
-
-
-fieldset{
-font-family:
-
-}
-
-
-
-.bar{
-background-color:red;
 }
 
 .hidden{
@@ -75,12 +58,34 @@ display:none;
 
 }
 
-.invisible{
-visibility:hidden
+
+@media screen and (max-width: 25em) {
+  nav{
+   background-color:grey;
+    display:block;
+    
+  }
+  
 }
 
+@media screen and (min-width: 50em) {
+   nav{
+    padding-left: 7em;
+    padding-right: 7em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 80em) {
+   nav{
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 }
 
