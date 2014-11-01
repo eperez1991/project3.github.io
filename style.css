@@ -32,6 +32,7 @@ display: inline;
 padding-top:.5em;
 padding-bottom:.5em;
 
+
 }
 
 a{
@@ -42,21 +43,23 @@ color:white;
 
 
 
-.info {
-position:absolute;
-padding-left:15em;
-padding-right:1em;
-
-
-}
 
 
 
 fieldset{
 width:10em;
-
+margin-right:80em;
+background-color:#E6E6E6;
 }
 
+.info {
+
+
+padding-left:2em;
+padding-right:2em;
+
+
+}
 
 
 .hidden{
@@ -65,13 +68,22 @@ display:none;
 }
 
 
+
+
+
 @media screen and (max-width: 25em) {
   
   nav{
    background-color:	#333333;
- 
-     
+    
   }
+
+  nav a:hover{
+  color:red;
+ 
+  
+  }
+  
   
   .logo img{
   width:15em;
@@ -93,35 +105,34 @@ padding-right:1em;
   
   fieldset{
   background-color:red;
-  
+ 
   
   }
   
   fieldset input{
-  padding-left:3.5em;
+  padding-left:1.5em;
+  padding-right:1.5em;
   
-}
-
-
-
-@media screen and (min-width: 50em) {
-   nav{
-    padding-left: 7em;
-    padding-right: 7em;
-    margin-left: auto;
-    margin-right: auto;
   }
-}
-
-@media screen and (min-width: 80em) {
-   nav{
-    padding-left: 10em;
-    padding-right: 10em;
-    margin-left: auto;
-    margin-right: auto;
   }
+  
+   @media screen and (min-width: 1000px) {
+   
+   
+    nav{
+        background-color:	#990000;
+    
+  }
+   fieldset{
+  background-color:	#B2B2B2;
+ 
+  
+  }
+   
+   }
+  
+  
+
+
+
 }
-
-
-}
-
